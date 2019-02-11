@@ -1,0 +1,31 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Barea \bgroup \em et al.\egroup
+  }{2002}]{Barea:eogmobility}
+Rafael Barea, Luciano Boquete, Manuel Mazo, and Elena Lopez.
+\newblock System for assisted mobility using eye movements based on
+  electrooculography.
+\newblock {\em Neural Systems and Rehabilitation Engineering.}, 10(4):209--218,
+  December 2002.
+
+\bibitem[\protect\citeauthoryear{Barile}{2015}]{manhdist}
+Margherita Barile.
+\newblock Taxicab metric.
+\newblock \url{http://mathworld.wolfram.com/TaxicabMetric.html}, 2015.
+
+\bibitem[\protect\citeauthoryear{Bulling \bgroup \em et al.\egroup
+  }{2010}]{Bulling:eyeanalysis}
+Andreas Bulling, Jamie A.Ward, Hans Gellersen, and Gerhard Tröster.
+\newblock Eye movement analysis for activity recognition using
+  electrooculography.
+\newblock {\em Pattern Analysis and Machine Intelligence.}, 33(4):741--753,
+  April 2010.
+
+\bibitem[\protect\citeauthoryear{Yagi}{2010}]{yagi:eoginterface}
+Tohru Yagi.
+\newblock Eye-gaze interfaces using electro-oculography (eog).
+\newblock In {\em Proceedings of the 2010 workshop on Eye gaze in intelligent
+  human machine interaction}, pages 28--32, Hong Kong, China, February 2010.
+  ACM.
+
+\end{thebibliography}

@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\author{Michiel Willems, Pieter Verlinden}
+\title{EOG_papers indeling}
+\begin{document}
+\section{Inleiding}
+	\subsection{WAAROM}
+	\subsection{Korte inhoud}
+	\subsection{Indeling}
+	\subsection{Bronnen : Papers}
+		\subsubsection{Eye-gaze Interfaces using EOG}
+		\subsubsection{System for Assisted Mobility Using EOG}
+		\subsubsection{Eye Movement Analysis for Activity Recognition using EOG}
+\section{Midden}
+
+	\subsection{EOG-technologie}
+		\subsubsection{Paper: Eye-gaze Interfaces using EOG}
+			\textbf{Voordelen:}
+				\begin{enumerate}
+					\item Gemakkelijk op te stellen (4-5 sensoren);
+					\item Geen zicht-belemmering;
+					\item Minder vermoeiend;
+					\item Goedkoop;
+				\end{enumerate}
+			\textbf{Nadelen:}
+				\begin{enumerate}
+					\item Elektrodes op het gezicht;
+					\item Afwijking van het signaal (Drift)
+					\item Gevoelig voor knipperen (soms geen nadeel)
+				\end{enumerate}
+		\subsubsection{Paper: System for Assisted Mobility Using EOG}
+			EOG detecteert oog bewegingen op basis van het potentiaal verschil tussen de cornea (voorkant van de oogbol) en het retina (oppervlakte binnenkant oog). Een opname hiervan noemt men typisch een elektrooculogram.\\
+			
+			Dit potentiaal ligt tussen 50 en 3500 $\mu V$. Het gedrag van dit potentiaal is lineair t.o.v. kijkhoeken van $\pm30\degree$. Deze biopotentiaal is nauwelijks constant. Er zit een drift op waarmee rekening moet worden gehouden.\\
+			%misschien is dit al voor aanpak van het probleem
+			
+			De elektrodes worden op de slapen en boven en onder een oog geplaatst. Soms wordt ter referentie een vijfde sensor op het voorhoofd geplaatst om de drift in biopotentiaal te vermijden.
+			
+		\subsubsection{Paper: Eye Movement Analysis for Activity Recognition using EOG}
+			EOG heeft typische signaal amplitudes van $5 - 20 \mu V$/graad met als essentiële frequentie tussen $0 - 30Hz$.
+			
+		Een duidelijk onderscheid is nodig tussen 2 verschillende manieren om het EOG-signaal te interpreteren en te implementeren. Dit onderscheid heeft geleid tot de EOG Pointer en de EOG Switch.
+		\subsubsection{EOG Pointer}
+		Zoals de naam al doet vermoeden maakt men bij deze implementatie gebruik van een pointer of cursor die de gebruiker aan de hand van oogbewegingen kan verplaatsen over een scherm. De opstelling bestaat hier uit drie delen: Het opname element, de signaalprocessor en het schermelement. Aan de hand van het EOG-signaal dat verkregen wordt via het opname element (bestaande uit een aantal sensoren en een versterker) wordt vervolgens de orientatie van de ogen berekent. Een wijzer op een computermonitor geeft dan deze orientatie aan.
+		\subsubsection{EOG Switch}
+		na het uitvoeren van klinische testen bij personen die lijden aan ernstig spierziekten zoals ALS of musculaire dystrofie viel het op dat ze niet zozeer ge\"interesseerd waren in de controle van een wijzer op een scherm. Er was vraag naar een simpelere en meer vertrouwelijke vorm van EOG-besturing. Dit leidde tot de ontwikkeling van de zogenaamde EOG-Switch. Hierbij wordt het mogelijk voor de gebruiker om aan de hand van oogbewegingen een AAN/UIT signaal te verzenden naar een extern apparaat, zoals bijvoorbeeld een   
+		noodhulp alarm of een peroonlijke computer. Door de eenvoudigheid van het AAN/UIT signaal is er niet veel signaalverwerking nodig om dit signaal te generen en blijft het gehele systeem dus betrouwbaar en compact.
+		
+	\subsection{Signaal interpretatie}
+		\subsubsection{Paper: Eye-gaze Interfaces using EOG}
+			Signaal interpretatie van EOG brengt enkele moeilijkheden met zich mee. De drift in het potentiaal moet gecorrigeerd worden, bewegingen van het hoofd en de spieren in het gezicht zorgen voor ruis op het signaal. Tenslotte is er nog het knipperen van de ogen, hetgeen zorgt voor pieken in het signaal.
+		\subsubsection{Paper: System for Assisted Mobility Using EOG}
+			Oogbeweging moet worden onderverdeeld in soorten. In dit geval zijn dat er drie: Het knipperen van de ogen, bewegingen zelf en het stilstaan van het de ogen (staren).
+		\subsubsection{Paper: Eye Movement Analysis for Activity Recognition using EOG}
+			De drie eerdervermelde oogbewegingen worden hier beter geanalyseerd en er worden methodes gegeven om deze te detecteren. 
+			
+	
+	\subsection{Rolstoel toepassing}
+		\subsubsection{Paper: Paper: Eye-gaze Interfaces using EOG}
+			/
+		\subsubsection{Paper: System for Assisted Mobility Using EOG}
+			Om te beginnen worden er voorbeelden gegeven waarvoor EOG nuttig zou kunnen zijn. Dit is vooral voor mensen met een handicap die geen gebruik meer kunnen maken van hun handen en/of in een rolstoel zitten. Hierin kan dan nog een onderscheidt gemaakt worden tussen gevallen waarin het hoofd al dan niet te bewegen is of niet.\\
+			
+			Besturing van de rolstoel kan opgedeeld worden in twee klassen: Commando besturing en gescande besturing. Commando besturing bestaat uit een interface met bepaalde knoppen zoals \textit{VOORWAARTS, ACHTERWAARTS, LINKS en RECHTS}, die de bestuurder d.m.v. oogbeweging kan selecteren. De rolstoel voert het commando uit a.d.h.v. vooraf bepaalde waardes.\\
+			Bij gescande besturing wordt a.d.h.v. oogbewegingen een patroon herkent dat zegt in welke richting de rolstoel moet bewegen.\\
+			
+			Problemen die hierbij optreden zijn natuurlijk de nauwkeurigheid van de oogdetectie en de gebruiksvriendelijkheid van het systeem.
+		\subsubsection{Paper: Eye Movement Analysis for Activity Recognition using EOG}
+
+	\subsection{EOG Technologie}
+		
+		
+\section{Experimenten}
+	\subsection{Opstelling}
+	\subsection{Resultaten}
+\section{Besluit}
+	\subsection{Bijdragen}
+		\subsubsection{Waarom is het belangrijk}
+
+\end{document}

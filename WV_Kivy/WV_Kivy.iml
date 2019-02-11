@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file://$MODULE_DIR$/../eogScope_py/usb" />
+    <libelement value="file://C:\Users\Pieter\Documents\Documenten\--- SCHOOL ---\FASE III\WV\eog_project\WV_Kivy\lib" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="Python 3.4.2 (C:\Python34\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="module-library">
+      <library name="usb">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../eogScope_py/usb" />
+        </CLASSES>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

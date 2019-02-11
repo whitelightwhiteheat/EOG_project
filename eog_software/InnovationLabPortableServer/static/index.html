@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Innovationlab Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/innovationlab.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-controller="AppCtrl">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Innovationlab Dashboard</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Dashboard</a></li>
+            <li><a href="log.html">Log</a></li>
+            <li><a href="http://eng.kuleuven.be/innovationlab">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container" ng-controller="DashboardCtrl">
+
+      <div class="starter-template">
+        <h1>Innovationlab Dashboard</h1>
+	<h2>Games</h2>
+
+<form class="form-inline" role="form" style="margin-bottom:10px;">
+<div class="form-group" style="width:50%;">
+<div class="input-group">
+  <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+  <input ng-model="search" type="text" class="form-control" placeholder="Search">
+</div>
+</div>
+  <button type="submit" class="btn btn-default" ng-click="update()"><i class="glyphicon glyphicon-refresh"></i></button>
+</form>
+
+
+<table class="table table-bordered">
+<tr><th>#<th>Name<th>Defenders<th>Attackers
+  <th>Players<br><table class="table table-condensed" style="width:100%">
+   <tr>
+     <th style="width:50%">Name
+     <th style="width:10%">X
+     <th style="width:10%">Y
+     <th style="width:20%">Type
+     <th style="width:10%">Points
+   </tr>
+  </table>
+<th>Actions</tr>
+<tr ng-repeat="game in games | filter:search | orderBy:['i','name'] track by game.name">
+  <td>{{game.i}}</td>
+  <td>{{game.name}}</td>
+  <td>{{game.defenders}}
+  <td>{{game.attackers}}
+  <td>
+  <table class="table table-condensed" style="width:100%">
+   <tr ng-repeat="player in game.players | orderBy:'name' track by player.name">
+     <td style="width:50%">{{player.name}}
+     <td style="width:10%">{{player.x}}
+     <td style="width:10%">{{player.y}}
+     <td style="width:20%">{{player.type}}
+     <td style="width:10%">{{player.points}}
+   </tr>
+  </table>
+  </td>
+  <td><button ng-click="resetGame(game)">Reset</button></td>
+</tr>
+</table>
+
+
+
+
+
+
+	<h2>Useful commands (assuming seldon; otherwise substitute own server, including port)</h2>
+	<p>
+Status:
+<pre>http://seldon.cs.kuleuven.be/innovationlab/games/status</pre>
+Resetting a game: 
+<pre>http://seldon.cs.kuleuven.be/innovationlab/_gamename_/reset</pre>
+Manually sending a command (command can be one of: left right up down):
+<pre>http://seldon.cs.kuleuven.be/innovationlab/_gamename_/_username_/_cmd_/_password_ </pre>
+Getting user info:
+<pre>http://seldon.cs.kuleuven.be/innovationlab/_gamename_/_username_/get</pre>
+Re-initializing all games:
+<pre>http://seldon.cs.kuleuven.be/innovationlab/games/initialize</pre>
+  </p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="lib/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/innovationlab.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+

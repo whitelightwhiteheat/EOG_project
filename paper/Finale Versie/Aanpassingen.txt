@@ -1,0 +1,59 @@
+//Paper EOG
+//Verlinden Pieter & Willems Michiel.
+
+//Aanpassingen op basis van reviews//
+
+Er staan tal van dt-fouten in de tekst:
+
+=> dt-fouten en verkeerde zinsbouw gezocht en verbetert doorheen meerdere herzieningen.
+
+De algoritmes zouden iets meer detail mogen besproken worden:
+De vorm van de algoritmes met die flow-charts blijft steeds wat oppervlakkig en vaag.
+ik wil liever een klein echt algoritme zien ... met bvb. regels if then ... bvb:
+- de uitleg van sommige figuren is wat vaag ... je zou die evt. kunnen annoteren met bijkomende info.
+
+=> Algoritmes gedetailleerder uitgelegd waar nodig (zie highlighting)
+
+het overzicht van de paper dat nu bij het begin van de inleiding staat komt te vroeg. Dat hoort thuis op het einde van sectie 1, net voor sectie 2:
+
+=> Overzicht verwijdert, (na overleg met begeleiders leek overzicht overbodig)
+
+Fig 8 wat is die blink buffer ?
+
+=> Zie einde sectie 3.3, daar staat korte uitleg.
+
+- ik vraag me ook af of het niet beter zou zijn om de voorgestelde oplossingen direct na de uitleg over het probleem
+te plaatsen (nu apart in sectie 2 en 3). Dat leest misschien beter.
+
+=> Individuele problemen samen gegroepeerd met oplossing. +
+=> Eventueel tekst toegevoegd voor continuïteit (highlighted).
+
+— wat bedoel je met trendline ? dat leg je niet uit ? Is dat gewoon het gemiddelde ?
+
+=> Korte vermelding toegevoegd (zie highlighting 4.2 p6)
+
+- referentie van Barile is niet volledig.
+
+=> Gekozen voor andere/betere referentie.
+
+- bij de figuurtjes (1 en 2) dien je de bron te vermelden
+
+=> aangepast ( zie highlighting 1.1 p2)
+
+- gebruik consistent ’staat’ of ’toestand’ voor het engelse woord ’state’:
+
+=> aangepast.
+
+//Verdere aanpassingen//
+
+=> Veel minder lange en onleesbare zinnen.
+=> Veel engelse termen vervangen door nederlandse (vb DOWN -> ONDER )
+=> Schrijffouten verwijdert. (vb $39 ipv %39)
+=> Dankwoord toegevoegd.
+=> Consistent gebruik van 3de persoon doorheen paper ingevoerd.
+
+//Opmerking//
+Eventuele verdere aanpassingen die aangeraden werden in de reviews zijn besproken geweest.
+Omdat we de lengte van 8 pagina's niet wilden overschrijden zijn deze voorgestelde aanpassingen niet ingevoerd.
+
+

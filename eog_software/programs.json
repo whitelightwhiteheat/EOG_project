@@ -1,0 +1,25 @@
+{
+    "apps" : [
+        {
+            "name" : "eogScope",
+            "workingdir" : ".",
+            "exe" : "./eogScope/eogScope.exe",
+            "start" : false,
+            "detached" : false
+        },
+        {
+            "name" : "Scratch",
+            "workingdir" : ".",
+            "exe" : "./Scratch/Scratch.exe ./Scratch/Scratch.image",
+            "start" : false,
+            "detached" : false
+        },
+        {
+            "name" : "Client",
+            "workingdir" : ".",
+            "exe" : "../Crypto_software/client/dist/client.exe",
+            "start" : false,
+            "detached" : true
+        }
+    ]
+}

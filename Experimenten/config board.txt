@@ -1,0 +1,4 @@
+L - R : Groen - Bruin
+O - B : Zwart - Wit 
+
+Onderste rij : Bruin Groen Wit Zwart

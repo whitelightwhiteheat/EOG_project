@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\author{Pieter Verlinden, Michiel Willems}
+\title{EOG experimenten}
+\begin{document}
+	\section{RL-Beweging}
+			\subsection{Waarneming}
+				\paragraph{Rechts-Links Sensoren:}
+				Mooi \textit{ONDER - MIDDEN - BOVEN} patroon. Uitschieters zijn niet waar te nemen in de data\\
+				\paragraph{Onder-Boven Sensoren:}
+				Een relatief goed complementair signaal met de Rechts-Links sensoren met duidelijke uitschieters bij het knipperen.
+			\subsection{Eerste bedenkingen}
+				Het patroon van de Rechts-Links sensoren kan perfect gebruikt worden om de $X$-coördinaten vast te stellen op basis van de relatieve waarden. Er hoeft geen demping of filtering toegepast te worden omdat de \textit{"blinks"} een verwaarloosbaar effect hebben.\\
+				
+				De data van de Onder-Boven sensoren kan goed gebruikt worden om \textit{"blinks"} te detecteren.
+			\subsection{Eerste analyse en verwerking}
+				Omdat uit onze eerste resultaten kan vastgesteld worden dat de Onder-Boven data complementair is aan de Rechts-Links data, kunnen we beide data optellen bij elkaar. Dit geeft een relatief constante rechte met duidelijke uitschieters bij de \textit{blinks}.\\
+				
+				Door het verschil te nemen in de optelling van beide data: $[X+Y](n+1) - [X+Y](n)$ en deze waarde te filteren op kleine uitschieters, zijn \textit{blinks} duidelijk te detecteren. Uit de eerste experimenten volgt dat de ideale filterwaarde rond $290$ ligt. 
+		\section{OB-Beweging}
+			\subsection{Waarneming}
+				\paragraph{Rechts-Links Sensoren:}
+					Mooi rechtlijnig patroon, dus volledig te verwaarlozen.\\
+				\paragraph{Onder-Boven Sensoren:}
+					Mooi \textit{ONDER - MIDDEN - BOVEN} patroon met uitschieters bij de \textit{blinks}.
+			\subsection{Eerste bedenkingen}
+				Het patroon van de Onder-Boven sensoren is ideaal om de $Y$-coördinaten vast te stellen. Een complicatie die hierbij komt kijken is de invloed van de \textit{blinks} die duidelijk de data verstoord.
+			\subsection{Eerste analyse en verwerking}
+				Om de \textit{blinks} te filteren kunnen we gebruik maken van het verschil in signaal. Zoveel te sterker het verschil in signaal, zoveel te sterke de demping moet zijn. Uit de eerste experimenten volgt dat het verschil in signaal het best gefilterd wordt tussen de waarden: $50 - 450$. De dempingsfactor was het beste rond $0.55$.\\
+				
+				$Y$-data : $Y(n)$\\
+				Verschil in data : $D(n) = Y(n+1)-Y(n)$\\
+				dempingsfactor : $\mu$\\
+				$$Y(n)+\mu\cdot D(n)$$
+		\section{Besluit}
+		Door Rechts-Links te combineren met de Onder-Boven data bij RL-beweging kunnen we \textit{blinks} detecteren.\\
+		
+		Bij OB-beweging kunnen we \textit{blinks} dempen maar nog niet volledig weg filteren. Een volgende stap zou zijn, deze te detecteren en uit het signaal uit te knippen en de rest van de punten terug interpoleren.
+\end{document}

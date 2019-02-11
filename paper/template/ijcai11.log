@@ -1,0 +1,151 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.4)  27 APR 2015 15:01
+entering extended mode
+**ijcai11.tex
+
+("C:\Users\Pieter\Documents\Documenten\--- SCHOOL ---\FASE III\WV\eog_project\p
+aper\template\ijcai11.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+IJCAI-11 Instructions for Authors
+("C:\Program Files\MikTex 2.9'\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MikTex 2.9'\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Pieter\Documents\Documenten\--- SCHOOL ---\FASE III\WV\eog_project\p
+aper\template\ijcai11.sty"
+Conference Style, version of 6 September 1995 (revised Nov 2010)
+\titlebox=\skip43
+Named Citation Style, version of 30 November 1994
+) ("C:\Program Files\MikTex 2.9'\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+("C:\Users\Pieter\Documents\Documenten\--- SCHOOL ---\FASE III\WV\eog_project\p
+aper\template\ijcai11.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 45.
+
+("C:\Program Files\MikTex 2.9'\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 47.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 47.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 91.
+
+("C:\Program Files\MikTex 2.9'\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 109.
+
+
+("C:\Program Files\MikTex 2.9'\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 115.
+
+
+("C:\Program Files\MikTex 2.9'\tex\latex\psnfss\omspcr.fd"
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 275.
+ [2]
+("C:\Users\Pieter\Documents\Documenten\--- SCHOOL ---\FASE III\WV\eog_project\p
+aper\template\ijcai11.bbl"
+Underfull \hbox (badness 1810) in paragraph at lines 25--29
+[]\OT1/ptm/m/n/10 Georg Got-t-lob, Nicola Leone, and
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 25--29
+\OT1/ptm/m/n/10 Francesco Scar-cello.  Hy-per-tree de-com-po-si-tions and
+ []
+
+) [3
+
+]
+("C:\Users\Pieter\Documents\Documenten\--- SCHOOL ---\FASE III\WV\eog_project\p
+aper\template\ijcai11.aux") ) 
+Here is how much of TeX's memory you used:
+ 423 strings out of 494045
+ 6085 string characters out of 3148384
+ 58890 words of memory out of 3000000
+ 3751 multiletter control sequences out of 15000+200000
+ 27984 words of font info for 57 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 25i,10n,19p,161b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MikTex 2.9'/fonts/enc/dvips/font
+name/8r.enc}<C:/Program Files/MikTex 2.9'/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MikTex 2.9'/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:
+/Program Files/MikTex 2.9'/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
+ Files/MikTex 2.9'/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MikTex 
+2.9'/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MikTex 2.9'/fonts/type1
+/urw/times/utmr8a.pfb><C:/Program Files/MikTex 2.9'/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on ijcai11.pdf (3 pages, 99097 bytes).
+PDF statistics:
+ 41 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

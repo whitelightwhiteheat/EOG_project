@@ -1,0 +1,2 @@
+* Plot van ruis
+* Meer data voor thresholds
